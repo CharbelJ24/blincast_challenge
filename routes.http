@@ -10,8 +10,30 @@ Content-type: application/json
 
 ###
 
-###UPDATE
+POST http://localhost:3333/document
+Content-Type: application/json
+
+{
+    "action": "create",
+    "key": "idade",
+    "value": "17"
+}
+###
+
+### UPDATE
+
+POST http://localhost:3333/document
+Content-Type: application/json
+
+{
+    "action": "update",
+    "key": "nome",
+    "value": "João"
+}
 
 ###
 
-###DELETE
+### LIST
+GET http://localhost:3333/document
+
+### DELETE
