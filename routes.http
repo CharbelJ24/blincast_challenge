@@ -1,0 +1,17 @@
+### CREATE
+POST http://localhost:3333/document
+Content-type: application/json
+
+{
+    "action": "create",
+    "key": "nome",
+    "value": "João"
+}
+
+###
+
+###UPDATE
+
+###
+
+###DELETE
