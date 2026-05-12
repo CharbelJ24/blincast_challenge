@@ -1,7 +1,11 @@
 import { fastify } from 'fastify'
 import { DatabaseMemory } from './database.js'
+import cors from '@fastify/cors'
 
-const server = fastify()
+
+const server = fastify({ logger: true })
+
+await server.register(cors)
 
 const database = new DatabaseMemory()
 
