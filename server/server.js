@@ -23,9 +23,13 @@ server.post('/document', (request, reply) => {
         return reply.status(result.code === 0 ? 200: 404).send(result)
     }
 
-    // if (action == 'delete') {
+    if (action == 'delete') {
+        const result = database.delete(key)
+        return reply.status(result.code === 0 ? 200: 404).send(result)
+    }
 
-    // }
+    // action diferente de create | update | delete
+    return reply.status(501).send({ status: 'error', code: 1 })
 })
 
 server.listen({

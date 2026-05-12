@@ -21,19 +21,27 @@ Content-Type: application/json
 ###
 
 ### UPDATE
-
 POST http://localhost:3333/document
 Content-Type: application/json
 
 {
     "action": "update",
     "key": "nome",
-    "value": "João"
+    "value": "Pedro"
+}
+
+###
+
+### DELETE
+POST http://localhost:3333/document
+Content-Type: application/json
+
+{
+    "action": "delete",
+    "key": "nome"
 }
 
 ###
 
 ### LIST
 GET http://localhost:3333/document
-
-### DELETE
