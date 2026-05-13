@@ -10,7 +10,7 @@ Aplicação composta por um servidor HTTP e um cliente web de gerenciamento de u
 
 ## Pré-requisitos
 
-Para utilizar a aplicação é necessário ter o [Node.js](https://nodejs.org/pt-br/download) instalado
+Para utilizar a aplicação é necessário ter o [Node.js](https://nodejs.org/pt-br/download) instalado (é aconselhado instalar pelo [chocolatey](https://chocolatey.org/))
 
 ## Como rodar o projeto
 
@@ -37,7 +37,15 @@ npm start
 
 O servidor estará rodando em `http://localhost:3333`
 
-## Para rodar o servidor
+## Para acessar o cliente web
+
+Apenas abra o arquivo "index.html" dentro da pasta "client", ou rode no terminal:
+
+```bash
+start client/index.html
+```
+
+## Para acessar o servidor
 
 Entre na pasta "server" e abra o arquivo routes.http no seu editor de código
 
@@ -84,12 +92,4 @@ __Resposta:__
     { "key": "nome", "value": "João" },
     { "Key": "idade", "value": "25" }
 ]
-```
-
-## Para rodar o servidor
-
-Apenas abra o arquivo "index.html" dentro da pasta "client", ou rode no terminal:
-
-```bash
-start client/index.html
 ```
