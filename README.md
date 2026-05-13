@@ -10,7 +10,7 @@ Aplicação composta por um servidor HTTP e um cliente web de gerenciamento de u
 
 ## Pré-requisitos
 
-Para utilizar a aplicação é necessário ter o [Node.js](https://nodejs.org/pt-br/download) instalado (é aconselhado instalar pelo [chocolatey](https://chocolatey.org/))
+Para utilizar a aplicação é necessário ter o [Node.js](https://nodejs.org/pt-br/download) instalado (é aconselhável instalar pelo [chocolatey](https://chocolatey.org/))
 
 ## Como rodar o projeto
 
