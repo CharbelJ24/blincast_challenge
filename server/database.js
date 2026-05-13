@@ -21,7 +21,7 @@ export class DatabaseMemory {
     update(key, value) {
         // key nao existe
         if (!this.#data.has(key)) {
-            return { status: 'error', code: -1}
+            return { status: 'error', code: 2}
         }
 
         // key existe
@@ -32,7 +32,7 @@ export class DatabaseMemory {
     delete(key) {
         // key nao existe
         if (!this.#data.has(key)) {
-            return { status: 'error', code: -1}
+            return { status: 'error', code: 3}
         }
 
         this.#data.delete(key)

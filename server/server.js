@@ -3,7 +3,7 @@ import { DatabaseMemory } from './database.js'
 import cors from '@fastify/cors'
 
 
-const server = fastify({ logger: true })
+const server = fastify({})
 
 await server.register(cors)
 

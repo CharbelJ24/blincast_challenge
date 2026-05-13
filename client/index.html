@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Server Manager</h1>
+
+    <div class="card">
+        <h2>Executar ação</h2>
+
+        <label>Ação</label>
+        <select id="action">
+            <option value="create">Create</option>
+            <option value="update">Update</option>
+            <option value="delete">Delete</option>
+        </select>
+
+        <label>Chave</label>
+        <input type="text" id="key" placeholder="ex: nome" />
+
+        <label>Valor</label>
+        <input type="text" id="value" placeholder="ex: João" />
+
+        <button onclick="enviar()">Enviar</button>
+
+        <div id="response"></div>
+    </div>
+
+    <div class="card">
+        <h2>Dados armazenados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chave</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                <tr><td colspan="2" class="empty">Nenhum dado ainda.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
